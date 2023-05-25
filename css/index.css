@@ -1,31 +1,51 @@
-.cabecalho {
-    background-color: transparent;
-  }
-
-  .cabecalho {
-    background-color: rgba(255, 255, 255, 0);
-  }
-
-
-    a {
-        color: black;
-        text-decoration: none;
-  }
-  
-
-    a:visited {
-        color: purple;
-  }
-  
-
-    a:hover {
-        color: rgb(209, 73, 0);
-        text-decoration: underline;
-  }
-  
-
-body {
-    background-image: url('');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
+.cabecalho {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: darkgray;
+    height: 100px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.cabecalho nav {
+    justify-content: space-around;
+    margin-left: 38%;
+    width: 70%;
+    height: 2rem;
+    flex-wrap: wrap;
+    
+}
+.cabecalho h2{
+    margin-left: 0.2%;
+}
+.cabecalho a{
+    margin-left: 2px;
+    text-decoration: none;
+    color: black;
+    padding: 2%;
+    font-size: 20px;
+}
+.cabecalho img {
+    margin-left: 10%;
+}
+
+a:visited {
+    color: rgb(0, 0, 0);
+}
+  
+ 
+a:hover {
+    color: rgb(255, 81, 0);
+    text-decoration: none;
+}
+
 
   
