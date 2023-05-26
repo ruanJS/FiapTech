@@ -1,8 +1,4 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+
 
 .cabecalho {
     display: flex;
@@ -17,7 +13,7 @@
 
 .cabecalho nav {
     justify-content: space-around;
-    margin-left: 38%;
+    margin-left: 20%;
     width: 70%;
     height: 2rem;
     flex-wrap: wrap;
