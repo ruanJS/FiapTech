@@ -1,0 +1,33 @@
+footer {
+    width: 100%;
+    color: aliceblue;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 1.5%;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    z-index: 1;
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255,);
+}
+
+.integrantes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nomes > ul{
+    padding: 0.2%;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0.8%;
+    font-size: 12px;
+}
+li{
+    padding: 0.2%;
+}
