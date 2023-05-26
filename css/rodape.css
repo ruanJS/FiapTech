@@ -1,0 +1,29 @@
+footer {
+    width: 100%;
+    height: 20%;
+    background-color: black;
+    color: aliceblue;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 1.5%;
+}
+
+.integrantes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nomes > ul{
+    padding: 0.2%;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0.8%;
+    font-size: 12px;
+}
+li{
+    padding: 0.2%;
+}
