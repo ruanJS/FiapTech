@@ -1,0 +1,49 @@
+.background-contato{
+    min-height: calc(120vh - 70px);
+    background-image: url('../img/pexels-james-wheeler-1542495.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; 
+}
+
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .card-login {
+    background-color: #ff5200;
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px rgb(255, 72, 0);
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  
+  input {
+    padding: 5px;
+    width: 70%;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: none;
+  }
+  
+  button {
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+  }
+  
