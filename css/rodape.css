@@ -1,13 +1,14 @@
 footer {
     width: 100%;
-    height: 20%;
-    background-color: black;
+    height: 28%;
     color: aliceblue;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     text-align: center;
     padding: 1.5%;
+    background-color: black;
+    /*backdrop-filter: blur(10px);*/
 }
 
 .integrantes {
