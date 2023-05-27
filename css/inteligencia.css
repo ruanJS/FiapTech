@@ -1,0 +1,11 @@
+.background-ia{
+    min-height: calc(120vh - 70px);
+    background-image: url('../img/IA.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; 
+}
+
+.introducao{
+    text-align: right;
+}
