@@ -20,7 +20,7 @@ inputNome.addEventListener("keyup", ()=>{
 });
 
 //SEGUNDO NOME
-const inputSobrenome = document.querySelector("#Sobrenome");
+const inputSobrenome = document.querySelector("#sobrenome");
 
     inputSobrenome.addEventListener("focus", ()=>{
     inputSobrenome.setAttribute("style","outline-color: #ff0000;");
@@ -28,7 +28,7 @@ const inputSobrenome = document.querySelector("#Sobrenome");
 
     inputSobrenome.addEventListener("keyup", ()=>{
 
-    const sobrenome = document.querySelector("label[for='Sobrenome']");
+    const sobrenome = document.querySelector("label[for='sobrenome']");
 
     if(inputSobrenome.value.length === '' || inputSobrenome.value.length < 5){
         inputSobrenome.setAttribute("style","outline-color: #ff0000;");
