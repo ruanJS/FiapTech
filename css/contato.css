@@ -1,3 +1,5 @@
+
+
 .background-contato{
     min-height: calc(120vh - 70px);
     background-image: url('../img/pexels-james-wheeler-1542495.jpg');
@@ -14,10 +16,11 @@
   }
   
   .card-login {
-    background-color: #ff5200;
+    background-color: #ff510000;
+    backdrop-filter: blur(5px);
     padding: 50px;
     border-radius: 20px;
-    box-shadow: 0 2px 4px rgb(255, 72, 0);
+    box-shadow: 0 2px 4px rgb(0, 0, 0);
   }
   
   h1 {
@@ -46,4 +49,20 @@
     cursor: pointer;
     border-radius: 20px;
   }
+
+  .left-login h1{
+    position: relative;
+    top: 300px;
+    left: 700px;
+    font-size: 35px;
+    
+    
+  }
+
+  .left-login br{
+    position: absolute;
+    top: 250px;
+    left: 300px; 
+  }
+  
   
