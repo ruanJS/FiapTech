@@ -40,7 +40,7 @@
     display: flex;
     justify-content: space-around;
 }
-.imagem-cima > img{
+.imagem-cima > a img{
     width: 125px;
     margin-top: 5%;
 }
@@ -70,7 +70,7 @@
     width: 100%;
     height: 5vh;
 }
-.imagem-baixo > img{
+.imagem-baixo > a img{
     width: 120px;
     margin-top: 3%;
 }
@@ -78,4 +78,10 @@
     display: flex;
     margin-left: 5%;
     padding: 2%;
+}
+.imagem{
+    transition: transform 0.5s ease;
+}
+.imagem:hover{
+    transform: scale(1.2);
 }
