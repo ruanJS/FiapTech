@@ -34,28 +34,33 @@
                   <!--criando o formulario-->  
                   <h1> Venha fazer parte deste time<br> Ajude a causa.</h1>
                 </div>
-                <form action="./index.html" method="GET" onsubmit="return false"></form>
+                <form action="./index.html" method="POST"></form>
                 <div class="right-login">
                     <div class="card-login">
                           <div class="textfield">
                               <label for="nome">Nome:</label>
-                              <input type="text" id="nome" name="nome" placeholder="Insira seu nome...">
+                              <input type="text" id="nome" name="nome" oninput="validateInputNome()" placeholder="Insira seu nome...">
+                              <p id="errorMsgNome" class="error"></p>
                             </div>
                             <div class="textfield">
                                 <label for="sobrenome">Sobrenome:</label>
-                              <input type="text" id="sobrenome" name="sobrenome" placeholder="insira o sobrenome...">
+                              <input type="text" id="sobrenome" name="sobrenome" oninput="validateInputSobrenome()" placeholder="insira o sobrenome...">
+                              <p id="errorMsgSobrenome" class="error"></p>
                             </div>
                             <div class="textfield">
                                 <label for="email">Email:</label>
-                                <input type="text" id="email" name="email" placeholder="Insira seu email...">
+                                <input type="text" id="email" name="email" oninput="validateInputEmail()" placeholder="Insira seu email...">
+                                <p id="errorMsgEmail" class="error"></p>
                             </div>
                             <div class="textfield">
                                 <label for="senha">Senha:</label>
-                                <input type="text" id="senha" name="senha" placeholder="Insira sua senha...">
+                                <input type="text" id="senha" name="senha" oninput="validateInputSenha()" placeholder="Insira sua senha...">
+                                <p id="errorMsgSenha" class="error"></p>
                             </div>
                             <div class="textfield">
                                 <label for="telefone">Telefone:</label>
-                                <input type="text" id="telefone" name="telefone" placeholder="Insira um telefone...">
+                                <input type="text" id="telefone" name="telefone" oninput="validateInputTelefone()" placeholder="Insira um telefone...">
+                                <p id="errorMsgTelefone" class="error"></p>
                             </div>
                             <div class="textfield">
                                 <label for="cpf">CPF:</label>

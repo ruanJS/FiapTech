@@ -9,7 +9,7 @@ inputNome.addEventListener("focus", ()=>{
 inputNome.addEventListener("keyup", ()=>{
     const lblNome = document.querySelector("label[for='nome']");
 
-    if(inputNome.value.length ==='' || inputNome.value.length < 3){
+    if(inputNome.value.length ==='' || inputNome.value.length < 5){
         inputNome.setAttribute("style","outline-color: #ff0000;");
         lblNome.setAttribute("style","color: #ff0000;");
 
@@ -18,6 +18,17 @@ inputNome.addEventListener("keyup", ()=>{
         lblNome.setAttribute("style","color: #00ff00;");
     }
 });
+function validateInputNome() {
+    const input = document.getElementById('nome').value;
+    const errorMsg = document.getElementById('errorMsgNome');
+
+    if (input.length < 5) {
+      errorMsg.innerText = 'O campo "Nome" deve ter mais de 5 dígitos.';
+      errorMsg.style.display = 'block';
+    } else {
+      errorMsg.style.display = 'none';
+    }
+  }
 
 //SEGUNDO NOME
 const inputSobrenome = document.querySelector("#sobrenome");
@@ -39,23 +50,15 @@ const inputSobrenome = document.querySelector("#sobrenome");
     }
 });
 
-    inputSobrenome.addEventListener('blur', ()=>{
-    if (inputSobrenome.value === '' || inputSobrenome.value.length < 5) {
-      mostrarErro('O campo deve conter pelo menos 5 caracteres, e não pode estar vazio.');
-    }
-});
+function validateInputSobrenome() {
+    const input = document.getElementById('sobrenome').value;
+    const errorMsg = document.getElementById('errorMsgSobrenome');
 
-  function mostrarErro(mensagem) {
-    erroNome = document.createElement('p');
-    erroNome.style.color = 'red';
-    erroNome.textContent = mensagem;
-    document.body.appendChild(erroNome);
-  }
-  
-  function removerErro() {
-    if (erroNome) {
-      erroNome.remove();
-      erroNome = null;
+    if (input.length < 5) {
+      errorMsg.innerText = 'O campo "Sobrenome" deve ter mais de 5 dígitos.';
+      errorMsg.style.display = 'block';
+    } else {
+      errorMsg.style.display = 'none';
     }
   }
 
@@ -77,35 +80,25 @@ inputEmail.addEventListener("keyup", ()=>{
     }
 });
 
-inputEmail.addEventListener('blur', ()=>{
-    if (inputEmail.value === '' || inputEmail.value.length < 5) {
-       mostrarErro('O campo deve conter pelo menos 5 caracteres.');
-        } else {
-           removerErro();
-        }
-    });
+function validateInputEmail() {
+    const input = document.getElementById('email').value;
+    const errorMsg = document.getElementById('errorMsgEmail');
 
-    function mostrarErro(mensagem) {
-       erroEmail = document.createElement('p');
-           erroEmail.style.color = 'red';
-           erroEmail.textContent = mensagem;
-
-       document.body.appendChild(erroEmail);
+    if (input.length < 5) {
+      errorMsg.innerText = 'O campo "Email" deve ter mais de 5 dígitos.';
+      errorMsg.style.display = 'block';
+    } else {
+      errorMsg.style.display = 'none';
     }
-       
-    function removerErro() {
-       if (erroEmail) {
-      erroEmail.remove();
-       erroEmail = null;
-   }}
+  }
 
 
     const inputSenha = document.querySelector("#senha");
     inputSenha.addEventListener("focus", ()=>{
-
+    });
     inputSenha.setAttribute("style","outline-color: #ff0000;");
 
-inputSenha.addEventListener("keyup", ()=>{
+    inputSenha.addEventListener("keyup", ()=>{
 
     const lblSenha = document.querySelector("label[for='senha']");
     if(inputSenha.value.length > 6){
@@ -117,6 +110,17 @@ inputSenha.addEventListener("keyup", ()=>{
     }
 });
 
+    function validateInputSenha() {
+    const input = document.getElementById('senha').value;
+    const errorMsg = document.getElementById('errorMsgSenha');
+
+    if (input.length < 5) {
+      errorMsg.innerText = 'O campo "Senha" deve ter mais de 5 dígitos.';
+      errorMsg.style.display = 'block';
+    } else {
+      errorMsg.style.display = 'none';
+    }
+  }
 
 const inputTelefone = document.querySelector("#telefone");
 inputTelefone.addEventListener("focus", ()=>{
@@ -134,8 +138,18 @@ inputTelefone.addEventListener("keyup", ()=>{
         lblTelefone.setAttribute("style","color: #00ff00;");
     }
 })
-});
 
+function validateInputTelefone() {
+    const input = document.getElementById('telefone').value;
+    const errorMsg = document.getElementById('errorMsgTelefone');
+
+    if (input.length < 5) {
+      errorMsg.innerText = 'O campo "Telefone" deve ter mais de 5 dígitos.';
+      errorMsg.style.display = 'block';
+    } else {
+      errorMsg.style.display = 'none';
+    }
+  }
 
 const inputCPF = document.querySelector("#cpf");
 inputCPF.addEventListener("focus", ()=>{
