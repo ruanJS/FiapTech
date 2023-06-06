@@ -6,6 +6,8 @@
 @import url(./inteligencia.css);
 @import url(./cultivo.css);
 @import url(./contato.css);
+@import url(./breakpoint-index.css);
+@import url(./breakpoint-principal.css);
 
 *{
     margin: 0;
