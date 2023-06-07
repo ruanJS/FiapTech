@@ -62,7 +62,7 @@ body{
     color: aliceblue;
 }
 #titulo1 > h3{
-    margin-left: 52%;
+    margin-left: 58%;
     padding: 2%;
 }
 
@@ -124,6 +124,109 @@ body{
 }
 
 
+@media screen and (max-width: 500px) {
+
+    /* Estilos para smartphones */
+    #titulo1 > h3{
+        font-size: 15px;
+        padding: 1%;
+        margin-left: 25%;
+    }
+    .conteudo1 > img{
+        width: 200px;
+        height: 250px;
+        margin-top: 1%;
+        margin-left: 5%;
+    }
+    .conteudo1 > p{
+        font-size: 11px;
+        margin-top: 10%;
+    }
+    #titulo2 > h3{
+        font-size: 15px;
+        padding: 1%;
+        margin-left: 25%;
+    }
+    .conteudo2 > img{
+        width: 200px;
+        height: 250px;
+        margin-top: 1%;
+        margin-left: 5%;
+    }
+    .conteudo2 > p{
+        font-size: 11px;
+        margin-top: 10%;
+    }
+    #titulo3 > h3{
+        font-size: 15px;
+        padding: 1%;
+        margin-left: 25%;
+    }
+    .conteudo3 > img{
+        width: 200px;
+        height: 250px;
+        margin-top: 1%;
+        margin-left: 5%;
+    } .conteudo3 > p{
+        font-size: 11px;
+        margin-right: 1%;
+    }
+
+}
+
+@media screen and (min-width: 500px) and (max-width: 949px) {
+    /* Estilos para tablets */
+    #titulo1 > h3{
+        font-size: 15px;
+        padding: 1%;
+        margin-left: 25%;
+    }
+    .conteudo1 > img{
+        width: 200px;
+        height: 250px;
+        margin-top: 1%;
+        margin-left: 5%;
+    }
+    .conteudo1 > p{
+        font-size: 11px;
+        margin-top: 10%;
+    }
+    #titulo2 > h3{
+        font-size: 15px;
+        padding: 1%;
+        margin-left: 25%;
+    }
+    .conteudo2 > img{
+        width: 200px;
+        height: 250px;
+        margin-top: 1%;
+        margin-left: 5%;
+    }
+    .conteudo2 > p{
+        font-size: 11px;
+        margin-top: 10%;
+    }
+    #titulo3 > h3{
+        font-size: 15px;
+        padding: 1%;
+        margin-left: 25%;
+    }
+    .conteudo3 > img{
+        width: 200px;
+        height: 250px;
+        margin-top: 1%;
+        margin-left: 5%;
+    } .conteudo3 > p{
+        font-size: 11px;
+        margin-right: 1%;
+    }
+
+
+}
+
+@media (min-width: 769px) {
+    /* Estilos para desktops */
+}
 
 
  

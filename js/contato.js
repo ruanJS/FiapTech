@@ -41,9 +41,9 @@ const inputSobrenome = document.querySelector("#sobrenome");
 
     const sobrenome = document.querySelector("label[for='sobrenome']");
 
-    if(inputSobrenome.value.length === '' || inputSobrenome.value.length < 5){
+    if(inputSobrenome.value.length === "" || inputSobrenome.value.length < 5){
         inputSobrenome.setAttribute("style","outline-color: #ff0000;");
-        segundoNome.setAttribute("style","color: #ff0000;");
+        sobrenome.setAttribute("style","color: #ff0000;");
     }else{
         inputSobrenome.setAttribute("style","outline-color: #00ff00;");
         sobrenome.setAttribute("style","color: #00ff00;");
@@ -219,7 +219,7 @@ function validateInputTelefone() {
   inputGenero.addEventListener("keyup", ()=>{
   
       const lblGenero = document.querySelector("label[for='genero']");
-      if(inputGenero.value.length < 2){
+      if(inputGenero.value.length < 5){
           inputGenero.setAttribute("style","outline-color: #ff0000;");
           lblGenero.setAttribute("style","color: #ff0000;");
       }else{
@@ -227,7 +227,18 @@ function validateInputTelefone() {
           lblGenero.setAttribute("style","color: #00ff00;");
       }
   })
-  
+  function validateInputGenero() {
+    const input = document.getElementById('genero').value;
+    const errorMsg = document.getElementById('errorMsgGenero');
+
+    if (input.length < 5) {
+      errorMsg.innerText = 'Insira um Gênero válido.';
+      errorMsg.style.display = 'block';
+    } else {
+      errorMsg.style.display = 'none';
+    }
+  }
+
   const inputCep = document.querySelector("#cep");
   inputCep.addEventListener("focus", ()=>{
       inputCep.setAttribute("style","outline-color: #ff0000;");

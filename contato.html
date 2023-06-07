@@ -38,57 +38,64 @@
                 <div class="right-login">
                     <div class="card-login">
                           <div class="textfield">
-                              <label for="nome">Nome:</label>
+                                <p id="errorMsgNome" class="error"></p>
+                              <label for="nome">Nome</label>
                               <input type="text" id="nome" name="nome" oninput="validateInputNome()" placeholder="Insira seu nome...">
-                              <p id="errorMsgNome" class="error"></p>
                             </div>
                             <div class="textfield">
-                                <label for="sobrenome">Sobrenome:</label>
+                                <p id="errorMsgSobrenome" class="error"></p>
+                                <label for="sobrenome">2° Nome</label>
                               <input type="text" id="sobrenome" name="sobrenome" oninput="validateInputSobrenome()" placeholder="Insira o sobrenome...">
-                              <p id="errorMsgSobrenome" class="error"></p>
+                             
                             </div>
                             <div class="textfield">
-                                <label for="email">Email:</label>
-                                <input type="text" id="email" name="email" oninput="validateInputEmail()" placeholder="Insira seu email...">
                                 <p id="errorMsgEmail" class="error"></p>
+                                <label for="email">Email</label>
+                                <input type="text" id="email" name="email" oninput="validateInputEmail()" placeholder="Insira seu email...">
+                                
                             </div>
                             <div class="textfield">
-                                <label for="senha">Senha:</label>
-                                <input type="text" id="senha" name="senha" oninput="validateInputSenha()" placeholder="Insira sua senha...">
                                 <p id="errorMsgSenha" class="error"></p>
+                                <label for="senha">Senha</label>
+                                <input type="text" id="senha" name="senha" oninput="validateInputSenha()" placeholder="Insira sua senha...">
+                                
                             </div>
                             <div class="textfield">
-                                <label for="telefone">Telefone:</label>
-                                <input type="text" id="telefone" name="telefone" oninput="validateInputTelefone()" placeholder="Insira um telefone...">
                                 <p id="errorMsgTelefone" class="error"></p>
+                                <label for="telefone">Telefone</label>
+                                <input type="text" id="telefone" name="telefone" oninput="validateInputTelefone()" placeholder="Insira um telefone...">
+                                
                             </div>
                             <div class="textfield">
-                                <label for="cpf">CPF:</label>
-                                <input type="text" id="cpf" name="cpf" oninput="validateInputcpf()" placeholder="Insira seu cpf...">
                                 <p id="errorMsgcpf" class="error"></p>
+                                <label for="cpf">CPF</label>
+                                <input type="text" id="cpf" name="cpf" oninput="validateInputcpf()" placeholder="Insira seu cpf...">
+                                
                             </div>
                             <div class="textfield">
-                                <label for="datanasc">Data/nasc:</label>
-                                <input type="text" id="datanasc" name="datanasc" oninput="validateInputdatanasc()" placeholder="Ex: DD/MM/AAAA...">
                                 <p id="errorMsgdatanasc" class="error"></p>
+                                <label for="datanasc">Data/Nasc</label>
+                                <input type="text" id="datanasc" name="datanasc" oninput="validateInputdatanasc()" placeholder="Ex: DD/MM/AAAA...">
+                                
                             </div>
                             <div class="textfield">
-                                <label for="genero">Gênero:</label>
-                                <input type="text" id="genero" name="genero" placeholder="Digite seu gênero...">
+                                <p id="errorMsgGenero" class="error"></p>
+                                <label for="genero">Gênero</label>
+                                <input type="text" id="genero" name="genero" oninput="validateInputGenero()" placeholder="Digite seu gênero...">
+                                
                             </div>
                             <div class="textfield">
-                                <label for="cep">CEP:</label>
-
-                                <input type="text" id="cep" name="cep" oninput="validateInputcep()" placeholder="Insira o seu cep...">
                                 <p id="errorMsgcep" class="error"></p>
-
-                                <input type="text" id="cep" name="cep" placeholder="Insira o seu cep...">
+                                <label for="cep">CEP</label>
+                                <input type="text" id="cep" name="cep" oninput="validateInputcep()" placeholder="Insira o seu cep...">
+                                
 
                             </div>
                             <div class="textfield">
-                                <label for="endereco">Endereço:</label>
-                                <input type="text" id="endereco" name="endereco" oninput="validateInputendereco()" placeholder="Informe seu endereço...">
                                 <p id="errorMsgendereco" class="error"></p>
+                                <label for="endereco">Endereço</label>
+                                <input type="text" id="endereco" name="endereco" oninput="validateInputendereco()" placeholder="Informe seu endereço...">
+                                
                             </div>
                             <button type="submit" id="cadastrar">Torne-se um héroi</button>
                         </form>
