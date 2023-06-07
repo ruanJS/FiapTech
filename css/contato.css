@@ -64,5 +64,21 @@
     top: 250px;
     left: 300px; 
   }
+  @media (max-width: 480px) {
+    .main-login{
+      margin-top: 250%;
+    }
+    .card-login{
+      height: 100vh;
+    }
+  }
+  @media screen and (min-width: 500px) and (max-width: 949px){
+    .main-login{
+      margin-top: 150%;
+    }
+    .card-login{
+      height: 100vh;
+    }
+  }
   
   
